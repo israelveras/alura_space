@@ -26,7 +26,6 @@
                                 <a href="{% url 'imagem' fotografia.id %}">
                                     {% if fotografia.foto == "" or fotografia.foto == null %}
                                     <img class="card__imagem" src="{% static '/assets/imagens/galeria/lost_in_space.jpeg'%}" alt="foto">
-                                    
                                     {% else %}
                                     <img class="card__imagem" src="{{ fotografia.foto.url }}" alt="foto">
                                     {% endif %}
